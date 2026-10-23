@@ -1,7 +1,7 @@
 import React, { useId, useState, useRef, useEffect } from 'react'
 import { motion, motionValue, useTransform, cubicBezier } from 'framer-motion'
 import { usePageProgress } from './pageProgress'
-import Halftone from './HalfTone'
+import Halftone from './Halftone'
 import Navbar from './Navbar'
 
 const DONE = motionValue(1)
