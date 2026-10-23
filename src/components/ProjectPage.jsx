@@ -1,7 +1,7 @@
 import React, { useId } from 'react'
 import { motion, motionValue, useTransform, cubicBezier } from 'framer-motion'
 import { usePageProgress } from './pageProgress'
-import Halftone from './HalfTone'
+import Halftone from './Halftone'
 import Navbar from './Navbar'
 
 const petals = [0, 60, 120, 180, 240, 300]
