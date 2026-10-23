@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-mono: "Space Mono", monospace;
+
+  --color-cream: #F3DDC1;
+  --color-ink: #1B1A17;
+  --color-coral: #E4553A;
+  --color-mustard: #E8A83A;
+}
+
+/* plain keyframes, usable with arbitrary classes like animate-[slow-spin_90s_linear_infinite] */
+@keyframes slow-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes roll {
+  0%   { transform: translateX(-10vw) rotate(0deg); }
+  100% { transform: translateX(110vw) rotate(720deg); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-rev {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.halftone {
+  mix-blend-mode: multiply; /* dots darken whatever colour is underneath */
+  opacity: var(--dot-opacity, 0.3);
+  background-image:
+    radial-gradient(circle, #000 var(--r, 0.9px), transparent calc(var(--r, 0.9px) + 0.4px)),
+    radial-gradient(circle, #000 var(--r, 0.9px), transparent calc(var(--r, 0.9px) + 0.4px));
+  background-size: var(--dot, 6px) var(--dot, 6px);
+  background-position: 0 0, calc(var(--dot, 6px) / 2) calc(var(--dot, 6px) / 2);
+}
+
+
