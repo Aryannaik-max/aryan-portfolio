@@ -1,7 +1,7 @@
 import React, { useId } from 'react'
 import { motion, motionValue, useTransform, cubicBezier } from 'framer-motion'
 import { usePageProgress } from './pageProgress'
-import Halftone from './HalfTone'
+import Halftone from './Halftone'
 import Navbar from './Navbar'
 
 const DONE = motionValue(1) // used if the page isn't scroll-driven: everything shown

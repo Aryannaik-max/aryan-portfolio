@@ -2,7 +2,7 @@
   import novaspace from '../assets/novaspace.png'
   import codeclashHero from '../assets/codeclash-hero.png'
   import Navbar from './Navbar'
-  import Halftone from './HalfTone'
+  import Halftone from './Halftone'
 
     const cards = [
       { name: 'CodeClash', bg: 'bg-mustard', rotate: '-rotate-6', deg: -6, pos: 'top-[8%] left-[8%]', src: codeclashHero },
