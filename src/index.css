@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @theme {
+  --font-sans: "Fraunces", serif;
   --font-display: "Fraunces", serif;
   --font-mono: "Space Mono", monospace;
 

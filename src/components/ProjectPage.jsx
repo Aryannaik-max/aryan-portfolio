@@ -72,6 +72,7 @@ const ProjectPage = ({ project }) => {
     index,
     title,
     tagline,
+    description = '', // short paragraph about the project (optional)
     features = [],
     stack = [],
     live = '#',
@@ -96,7 +97,7 @@ const ProjectPage = ({ project }) => {
 
   return (
     <div className='h-full w-full bg-coral'>
-      <div className='relative flex h-full flex-col overflow-hidden border-[3px] border-ink bg-cream text-ink'>
+      <div className='relative flex h-full flex-col overflow-hidden border-[3px] border-ink bg-cream font-sans text-ink'>
 
         {/* paper grain overlay */}
      <svg
@@ -142,6 +143,11 @@ const ProjectPage = ({ project }) => {
     <p className='mt-5 max-w-md text-base uppercase tracking-[0.12em] md:text-xl'>
       {tagline}
     </p>
+    {description && (
+      <p className='mt-6 max-w-lg text-sm leading-relaxed md:text-base'>
+        {description}
+      </p>
+    )}
   </div>
 
   <div className='relative z-10'>

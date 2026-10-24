@@ -77,6 +77,10 @@ const CardLayer = ({ geo, progress, zoom, children }) => {
           width: geo.W,
           height: geo.H,
           transform: `translate(-50%, -50%) scale(${1 / geo.S})`,
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'antialiased',
+          MozOsxFontSmoothing: 'grayscale',
         }}
       >
         {children}

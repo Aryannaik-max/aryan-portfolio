@@ -8,8 +8,10 @@ const project = {
   index: 2,
   title: 'CodeClash',
   tagline: 'A pixel-art Wild West duel.',
+  description:
+    'A 1v1 competitive programming platform. Two players are matched into a live duel, solve the same problem, and get judged against hidden test cases. Every match moves your Elo rating, so the bounty on your wanted poster reflects how you actually play. Code runs remotely through the Wandbox API, and match state stays in sync over Socket.IO with a Redis adapter.',
   features: ['Pixel-art arena', 'Start a match', 'Login & signup'],
-  stack: ['React', 'Node.js', 'Socket.io'],
+  stack: ['Next.js', 'TypeScript', 'Socket.IO', 'PostgreSQL', 'Prisma', 'Redis'],
   live: 'https://code-clash-pi.vercel.app/',
   repo: 'https://github.com/Aryannaik-max/CodeClash',
   cards: [

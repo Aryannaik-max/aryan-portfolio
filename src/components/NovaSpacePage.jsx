@@ -7,6 +7,8 @@ const project = {
   index: 1,
   title: 'NovaSpace',
   tagline: 'One workspace. Every project.',
+  description:
+    'A collaborative workspace for teams. Write documents together in a real-time editor with live discussion threads, and run projects on a Kanban board that moves tasks from To-Do to In-Progress to Completed. Workspaces are isolated with JWT authentication, uploads go through Cloudinary, and the interface is fully responsive.',
   features: [
     'Real-time editor',
     'Team chat',
@@ -15,7 +17,7 @@ const project = {
     'Version history',
     'Secure & private',
   ],
-  stack: ['React', 'Node.js', 'MongoDB'], // edit to what NovaSpace really uses
+  stack: ['React', 'Node.js', 'MySQL', 'Liveblocks', 'Cloudinary'],
   live: 'https://novaspace-seven.vercel.app/',
   repo: 'https://github.com/Aryannaik-max/Novaspace',
   cards: [
