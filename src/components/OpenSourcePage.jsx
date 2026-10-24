@@ -27,7 +27,7 @@ const contributions = [
     title: 'pendingReason, traced',
     body: 'Tracked a bug in how pendingReason propagates through the framework, followed it across four files, and fixed it at the source.',
     type: 'Bug fix',
-    status: 'Submitted',
+    status: 'Merged',
     href: 'https://github.com/jasmine/jasmine/pull/2107',
     tilt: 1.5,
   },
